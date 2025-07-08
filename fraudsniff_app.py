@@ -11,11 +11,10 @@ with open('final_model.joblib', 'rb') as file:
 def prediction(input_list):
     input_list = np.array(input_list, dtype=object)
     pred = model.predict_proba([input_list])[:, 1][0]
-    chance = round(pred * 100, 2)
     if pred > 0.5:
-        return f'This transaction is more likely to be fraudulent, chances {chance}%'
+        return f'This transaction is more likely to be fraudulent'
     else:
-        return f'This transaction is less likely to be fraudulent, chances {chance}%'
+        return f'This transaction is less likely to be fraudulent'
 
 def main():
     st.title('FRAUDSNIFF - Transaction Fraud Detector')
