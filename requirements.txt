@@ -1,4 +1,6 @@
 xgboost
-skicit-learn
+scikit-learn
+pandas
+numpy
 streamlit
 joblib
