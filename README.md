@@ -5,16 +5,16 @@ The rapid growth of digital transactions has led to a significant increase in on
 
 ## Dataset:
 The analysis is based on a historical dataset of online transactions. This dataset contains records of both legitimate and fraudulent activities, providing the necessary information to train and evaluate predictive models.
-step : tells about the unit of time
-type : type of transaction done
-amount : the total amount of transaction
-nameOrg	: account that starts the transaction 
-oldbalanceOrg : Balance of the account of sender before transaction
-newbalanceOrg : Balance of the account of sender after transaction
-nameDest : account that receives the transaction
-oldbalanceDest : Balance of the account of receiver before transaction
-newbalanceDest : Balance of the account of receiver after transaction
-isFraud (Target Variable)	: The value to be predicted i.e. 0 or 1
+- step : tells about the unit of time
+- type : type of transaction done
+- amount : the total amount of transaction
+- nameOrg	: account that starts the transaction 
+- oldbalanceOrg : Balance of the account of sender before transaction
+- newbalanceOrg : Balance of the account of sender after transaction
+- nameDest : account that receives the transaction
+- oldbalanceDest : Balance of the account of receiver before transaction
+- newbalanceDest : Balance of the account of receiver after transaction
+- isFraud (Target Variable)	: The value to be predicted i.e. 0 or 1
 
 ## Workflow
 ### Data Overview
